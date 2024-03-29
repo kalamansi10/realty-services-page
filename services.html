@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/layout.css" />
   </head>
-  <header>
-    <nav class="nav-bar flex-row justify-center">
+  <body>
+    <nav class="nav-bar flex-row justify-center align-center" id="nav-bar">
       <div class="nav-logo">
         <img
           src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.svg"
@@ -19,41 +19,90 @@
       </div>
       <ul class="flex-row justify-center">
         <li><a href="">MEET THE TEAM</a></li>
-        •
         <li><a href="">SEARCH FOR HOMES</a></li>
-        •
         <li><a href="">OUR COMMUNITIES</a></li>
-        •
         <li><a href="">HOME VALUATION</a></li>
-        •
         <li><a href="">SERVICES</a></li>
-        •
         <li><a href="">HOME ACROSS AMERICA</a></li>
-        •
         <li><a href="">TESTIMONIALS</a></li>
-        •
         <li><a href="">CONTACT US</a></li>
       </ul>
     </nav>
-    <div
-      class="service-intro flex-column justify-center align-center"
-      onclick="smoothScroll()"
+    <section class="services-intro-section flex-column align-center" id="service-intro-section">
+      <div class="intro1-message-wrapper" >
+        <p class="hidden" id="intro1-message">Over 33 Years of<br />Real Estate Success</p>
+      </div>
+      <div class="intro2-message-wrapper">
+        <p class="hidden" id="intro2-message">
+          We offer unparalleled service and negotiation skills to meet your
+          needs.
+        </p>
+      </div>
+      <div
+        class="scroll-down-wrapper flex-column align-center"
+        onclick="smoothScroll()"
+      >
+        <div class="scroll-down"></div>
+      </div>
+    </section>
+    <section
+      class="services-section flex-column justify-center align-center"
+      id="services-section"
     >
-      <img
-				class="down-fade-in"
-        src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.svg"
-        alt="jhsereno-logo"
-      />
-      <h1 class="up-fade-in">Why work with us?</h1>
-			<div class="scroll-down"></div>
-    </div>
-  </header>
-  <body>
-    <section id="test-section">
-      <div class="pf">TEST Test</div>
-      <div class="pfs">TEST Test</div>
-      <div class="sf">TEST Test</div>
-      <div class="sfs">TEST Test</div>
+      <h1>What You Can Expect</h1>
+      <div class="services-container flex-row justify-center">
+        <div class="services-card flex-column align-center hidden">
+          <img
+            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
+            alt="Wide Syndication"
+          />
+          <h2>Wide Syndication</h2>
+          <p>Market your property locally, nationally, and internationally.</p>
+        </div>
+        <div class="services-card flex-column align-center hidden">
+          <img
+            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007"
+            alt="Responsive Support"
+          />
+          <h2>Responsive Support</h2>
+          <p>Always available via phone, text, or email.</p>
+        </div>
+        <div class="services-card flex-column align-center hidden">
+          <img
+            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009"
+            alt="High-Quality Virtual Tours"
+          />
+          <h2>High-Quality Virtual Tours</h2>
+          <p>Make your home stand out with immersive virtual tours.</p>
+        </div>
+        <div class="services-card flex-column align-center hidden">
+          <img
+            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dywgmsgzddtcsqxagbwh/image-013"
+            alt="Professional Photography"
+          />
+          <h2>Professional Photography</h2>
+          <p>High-end photography for effective property marketing.</p>
+        </div>
+        <div class="services-card flex-column align-center hidden">
+          <img
+            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081"
+            alt="Drone Photography"
+          />
+          <h2>Drone Photography</h2>
+          <p>
+            Highlight unique perspectives of your property with aerial views.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="test">
+      <div class="services-img-wrapper flex-row justify-center">
+        <img
+					id="testinglangs"
+          src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/hqguvxyyi5jciyrzy35v/page-3"
+          alt="Services"
+        />
+      </div>
     </section>
   </body>
   <footer></footer>
