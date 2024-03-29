@@ -1,0 +1,117 @@
+.pf {
+  font-family: var(--global-primary-font-family);
+}
+
+.pfs {
+  font-family: var(--global-primary-font-family-short);
+}
+.sf {
+  font-family: var(--secondary-font-family);
+}
+.sfs {
+  font-family: var(--global-secondary-font-family-short);
+}
+
+.nav-bar {
+  margin-top: 2vh;
+  width: 100vw;
+  position: fixed;
+  color: white;
+  font-family: var(--global-secondary-font-family);
+  font-size: 1.8vh;
+}
+
+.nav-logo img {
+  height: 2vh;
+  width: auto;
+}
+
+.nav-bar ul {
+  gap: .5vw;
+  list-style-type: none;
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.service-intro {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920");
+  background-position: center center;
+}
+
+.service-intro img {
+  height: 10vh;
+  width: auto;
+}
+
+.service-intro h1 {
+  font-family: var(--global-primary-font-family);
+  font-weight: 100;
+  font-size: 5vh;
+  color: white;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5vh;
+	width: 3vh;
+	height: 3vh;
+	border-bottom: .05vh solid white;
+	border-right: .05vh solid white;
+	-webkit-transform: translate(-50%, 0%) rotate(45deg);
+	-moz-transform: translate(-50%, 0%) rotate(45deg);
+	transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation: fade_move_down 2s ease-in-out infinite;
+	animation: fade_move_down 2s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+ 0% {
+-webkit-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-webkit-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@-moz-keyframes fade_move_down {
+ 0% {
+-moz-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-moz-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@keyframes fade_move_down {
+ 0% {
+transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+
+section {
+  height: 100vh;
+  /* padding: var(--global-section-padding); */
+}
