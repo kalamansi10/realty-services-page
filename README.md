@@ -1,1 +1,1 @@
-Mock page for Luxyury presence Web Builder application.
+Mock page for Luxury presence Web Builder application.
