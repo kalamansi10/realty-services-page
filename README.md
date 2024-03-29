@@ -1,0 +1,1 @@
+Mock page for Luxyury presence Web Builder application.
