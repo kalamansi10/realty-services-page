@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Playfair+Display');
+
+/* Global Variables */
+
+:root {
+  --global-primary-font-family: 'Playfair Display',serif;
+  --global-primary-font-family-short: Playfair Display;
+  --global-secondary-font-family: 'Karla',serif;
+  --global-secondary-font-family-short: Karla;
+  --global-body-padding: 0px;
+  --global-background-color: #fff;
+  --global-body-font-size: 16px;
+  --global-h1-font-size: 70px;
+  --global-h2-font-size: 43px;
+  --global-h3-font-size: 30px;
+  --global-h4-font-size: 21px;
+  --global-h5-font-size: 17px;
+  --global-h6-font-size: 16px;
+  --global-section-padding: 96px;
+}
+
+/* Layout and Flexbox */
+.flex-column { display: flex; flex-direction: column; }
+.flex-row { display: flex; flex-direction: row; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.align-start { align-items: start; }
+.align-center { align-items: center; }
+.align-end { align-items: end; }
+.flex-wrap { flex-wrap: wrap; }
+
+.hidden { display: none; }
