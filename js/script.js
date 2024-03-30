@@ -23,8 +23,8 @@ const introObserver = new IntersectionObserver(
 const introMessageObserver = new IntersectionObserver(
   (entries) => {
     if (entries[0].isIntersecting) {
-      document.getElementById("intro1-message").classList.add("down-fade-in1");
-      document.getElementById("intro2-message").classList.add("up-fade-in1");
+      document.getElementById("intro1-message").classList.add("down-fade-in");
+      document.getElementById("intro2-message").classList.add("up-fade-in");
       introMessageObserver.unobserve(introSection);
     }
   },
@@ -35,16 +35,15 @@ const introMessageObserver = new IntersectionObserver(
 
 const servicesObserver = new IntersectionObserver(
   (entries) => {
-    if (entries[0].isIntersecting) {
-      servicesCards.forEach((card, index) => {
-        const animation = index % 2 === 0 ? "up-fade-in1" : "down-fade-in1";
-        card.classList.add(animation);
-      });
-      servicesObserver.unobserve(servicesContainer);
-    }
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("zoom-in")
+        servicesObserver.unobserve(entry.target);
+      }
+    })
   },
   {
-    threshold: 0.5,
+    threshold: .6,
   }
 );
 
@@ -71,4 +70,7 @@ function smoothScroll() {
 
 introObserver.observe(introSection);
 introMessageObserver.observe(introSection);
-servicesObserver.observe(servicesContainer);
+servicesCards.forEach(card => {
+  servicesObserver.observe(card);
+})
+
