@@ -15,7 +15,6 @@
 .nav > .nav-header {
   z-index: 100;
   flex: 0.95;
-  padding-left: 1rem;
 }
 .nav > .nav-header > .nav-title img {
   max-height: 30px;
@@ -386,7 +385,7 @@
   color: white;
   flex-wrap: wrap;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   min-height: 1200px;
   gap: 20px;
 
