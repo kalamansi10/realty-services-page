@@ -1,110 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Pleasanton Real Estate | Julie Hansen Partnership</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/animations.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-  </head>
-  <body>
-    <nav class="nav-bar flex-row justify-center align-center" id="nav-bar">
-      <div class="nav-logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Pleasanton Real Estate | Julie Hansen Partnership</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <img src="./img/jhsereno-light.webp" alt="jhsereno-logo" />
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <ul class="nav-list">
+      <li><a href="">MEET THE TEAM</a></li>
+      <li><a href="">SEARCH FOR HOMES</a></li>
+      <li><a href="">OUR COMMUNITIES</a></li>
+      <li><a href="">HOME VALUATION</a></li>
+      <li><a href="">SERVICES</a></li>
+      <li><a href="">HOME ACROSS AMERICA</a></li>
+      <li><a href="">TESTIMONIALS</a></li>
+      <li><a href="">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <section class="services-intro-section flex-column align-center" id="service-intro-section">
+    <div class="intro1-message-wrapper">
+      <p class="hidden" id="intro1-message">
+        Over 33 Years of<br />Real Estate Success
+      </p>
+    </div>
+    <div class="intro2-message-wrapper">
+      <p class="hidden" id="intro2-message">
+        Offerring unparalleled service and negotiation skills to meet your
+        needs.
+      </p>
+    </div>
+    <div class="scroll-down-wrapper flex-column align-center" onclick="smoothScroll()">
+      <div class="quick-scroll-button ease-in-out"></div>
+    </div>
+  </section>
+  <section class="services-section flex-column align-center" id="services-section">
+    <h1>Comprehensive Marketing Plan</h1>
+    <div class="services-container hidden">
+      <div class="services-cards-container">
+        <div class="services-card flex-row align-center hidden">
+          <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
+            alt="Wide Syndication" />
+          <div>
+            <h2>Wide Syndication</h2>
+            <p>
+              Market your property locally, nationally, and internationally.
+            </p>
+          </div>
+        </div>
+        <div class="services-card flex-row align-center hidden">
+          <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007"
+            alt="Responsive Support" />
+          <div>
+            <h2>Responsive Support</h2>
+            <p>Always available via phone, text, or email.</span>
+          </div>
+        </div>
+        <div class="services-card flex-row align-center hidden">
+          <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009"
+            alt="High-Quality Virtual Tours" />
+          <div>
+            <h2>High-Quality Virtual Tours</h2>
+            <p>Make your home stand out with immersive virtual tours.</span>
+          </div>
+        </div>
+        <div class="services-card flex-row align-center hidden">
+          <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dywgmsgzddtcsqxagbwh/image-013"
+            alt="Professional Photography" />
+          <div>
+            <h2>Professional Photography</h2>
+            <p>High-end photography for effective property marketing.</span>
+          </div>
+        </div>
+        <div class="services-card flex-row align-center hidden">
+          <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081"
+            alt="Drone Photography" />
+          <div>
+            <h2>Drone Photography</h2>
+            <p>
+              Highlight unique perspectives of your property with aerial
+              views.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="intro-article-section flex-column align-center">
+    <div class="article-container-1">
+      <div class="article-content-1 flex-column justify-center align-center">
+        <h2>Expert Staging Guidance</h2>
+        <div class="article-line"></div>
+        <div class="text-container-1">
+          <p>I specialize in expert staging guidance to enhance the allure of your property and attract potential
+            buyers. With meticulous attention to detail, I create intentional layouts that showcase your home's full
+            potential.</p><br>
+          <p>My staging expertise includes uncluttering and organizing every space, neatly arranging drawers and
+            cabinets, and ensuring pets are kept outdoors or off the premises during showings. Soft music softly playing
+            in the background adds a touch of elegance, creating a welcoming atmosphere for potential buyers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services-articles-section flex-column align-center">
+    <div class="article-container-2">
+      <img class="article-img"
+        src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/azjfmtzx6evxpubynfci/edit-page-11r2"
+        alt="Over 33 Years of Real Estate Success">
+      <div class="article-content-2">
+        <h2>Over 33 Years of Real Estate Success</h2>
+        <div class="text-container-2">
+          <p>We provide every one of our clients with a level of service they won’t find anywhere else. We give them
+            what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be
+            negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​​​​​​ ​​​​​​​And it’s
+            an experience like no other.</p>
+        </div>
+      </div>
+    </div>
+    <div class="article-container-3">
+      <div class="article-content-3">
+        <h2>We Want To Create An Unforgettable Experience For You...</h2>
+        <div class="text-container-3">
+          <p>We combine data gained from your home’s Comparative Market Analysis with local market research to create a
+            marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will
+            include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers.
+            ​​​​​​​ Successfully marketing a home in today’s real estate environment requires a firm with experience and
+            flexibility. Hansen Partners provides both.</p>
+        </div>
+      </div>
+      <img class="article-img"
+        src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/m5ea1kpipv5tiflnfx8t/edited-p-12"
+        alt="We Want To Create An Unforgettable Experience For You...">
+    </div>
+    <div class="article-container-4">
+      <img class="article-img"
+        src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/fuammgjubhjfvgcqleef/edit-image-056"
+        alt="The Hansen Partners Communications Tablet">
+      <div class="article-content-4">
+        <h2>The Hansen Partners Communications Tablet</h2>
+        <div class="text-container-4">
+          <p>We have created this as a wonderful tool so that we can communicate with you daily, provide you with
+            updates on what is happening with your home. We are available at the with a click of your tablet.</p>
+          <br><br>
+        </div>
+      </div>
+      <div class="article-container-4-1">
+        <div class="article-content-4-1">
+          <h2>Benefits of the Hansen Partners Tablet</h2>
+          <div class="text-container-4-1">
+            <ul>
+              <li>Review all documents and sign in the comfort of your home or anywhere.</li><br>
+              <li>Stay up to date on all marketing activities, review materials, photos, etc. in real time.</li><br>
+              <li>Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.
+              </li><br>
+              <li>You have your own email assigned just for you and your common space to quickly write a note, or quickly
+                send a video message to us for fast communication using our Bomb bomb video messaging system.</li><br>
+            </ul>
+          </div>
+        </div>
+        <div class="article-content-4-2">
+          <div class="text-container-4-2">
+            <p>We believe that transparency and guiding you and your family through the process is key to having the best
+              experience. <br><br> During these uncertain times. It is a good feeling to know you have some one with a proven track
+              record you can count on. We will be here to handle your needs during the Real Estate process. We think of it
+              before a need even arises. Because, that is just what we do.  <br><br> <i>Who you work with does matter!</i> </p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="processes-section flex-row justify-center">
+    <div class="processes-conatainer selling-process flex-column align-center hidden">
+      <h1>The Selling Process</h1>
+      <ol class="flex-column align-center">
+        <li class="list-left">
+          <span class="list-num">.01</span>
+          <p>INITIAL CONSULTATION & PLANNING</p>
+        </li>
+        <li class="list-left">
+          <span class="list-num">.02</span>
+          <p>DEVISE & EXECUTE MARKETING PLAN</p>
+        </li>
+        <li class="list-left">
+          <span class="list-num">.03</span>
+          <p>REVIEW OFFERS & REACH AGREEMENT WITH BUYER</p>
+        </li>
+        <li class="list-left">
+          <span class="list-num">.04</span>
+          <p>COMPLETE TRANSACTION PROCESS</p>
+        </li>
+        <li class="list-left">
+          <span class="list-num">.05</span>
+          <p>AFTER - SALE SERVICE</p>
+        </li>
+      </ol>
+    </div>
+    <div class="processes-conatainer buying-process flex-column align-center hidden">
+      <h1>The Buying Process</h1>
+      <ol class="flex-column align-center">
+        <li class="list-right">
+          <span class="list-num">.01</span>
+          <p>INITIAL CONSULTATION & PLANNING</p>
+        </li>
+        <li class="list-right">
+          <span class="list-num">.02</span>
+          <p>SEARCH FOR A HOME & GET PRE-APPROVED</p>
+        </li>
+        <li class="list-right">
+          <span class="list-num">.03</span>
+          <p>SUBMIT AN OFFER</p>
+        </li>
+        <li class="list-right">
+          <span class="list-num">.04</span>
+          <p>COMPLETE SETTLEMENT PROCESS</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="outro-article-section flex-column align-center">
+    <h2>We Market Your Home to The World</h2>
+    <div class="article-content-5">
+      <h3>Our Online Marketing Strategy</h3>
+      <div class="text-container-5">
+        <p>The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is
+          vital that your home be marketed online to audiences locally, nationally, and internationally.</p><br>
+      </div>
+    </div>
+    <div class="article-container-6 flex-row justify-center align-start">
+      <div class="article-content-6">
+        <h3>Local Exposure</h3>
+        <div class="text-container-6">
+          <p>Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S.
+            neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local
+            exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your
+            neighborhood.</p><br>
+        </div>
+      </div>
+      <div class="article-content-6">
+        <h3>National Exposure</h3>
+        <div class="text-container-6">
+          <p>We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers
+            to your home and increasing exposure. We will receive every inquiry about your property directly.</p><br>
+        </div>
+      </div>
+      <div class="article-content-6">
+        <h3>International Exposure</h3>
+        <div class="text-container-6">
+          <p>To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent
+            international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com,
+            LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, China.apr.com, Caimeiju, Juwai, Country Life UK.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/olcvsnzpdrd5tov8dbci/image-057" alt="partners-1"
+      id="partners-1">
+    <div class="article-content-5">
+      <div class="text-container-5">
+        <p>Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings
+          are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors
+          worldwide through our relationships with:</p>
+      </div>
+    </div>
+    <div class="partners-container flex-row justify-center align-center">
+      <div class="partners-wrapper flex-column align-center">
+        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069"
+          alt="partners-3" id="partners-3">
+        <i>Leading Real Estate Companies of The World® & Luxury Portfolio International</i>
+      </div>
+      <div class="partners-wrapper flex-column align-center">
+        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060"
+          alt="partners-2" id="partners-2">
+        <i>Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</i>
+      </div>
+      <div class="partners-wrapper flex-column align-center">
+        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070"
+          alt="partners-4" id="partners-4">
+        <i>Luxury Portfolio International is the leading network of the world’s premier luxury real estate brokerages
+          and their top agents, offering unparalleled marketing and intelligence services.</i>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <div class="contact-content flex-column justify-center align-center hidden">
+      <h1>Work With Us</h1>
+      <div class="article-line"></div>
+      <div class="article-container-7">
+        <div class="article-content-7 flex-column justify-center align-center">
+          <div class="text-container-7">
+            <p>With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams
+              are a reality. Let us guide you through your home buying journey, contact us today!</p>
+          </div>
+        </div>  
+      </div>
+      <button>CONTACT US</button>  
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-1">
+      <div class="footer-1-1 footer-content">
+        <div class="footer-1-1-1">
+          <h1>Julie Hansen Partnership</h1>
+          <p>An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and
+            sellers deserved more from their real estate company. More service. More resources. More integrity. More
+            global reach. In a word, more of everything people should expect when they buy or sell their homes.
+          </p>  
+        </div>
+        <br><br><br>
+        <div class="footer-1-1-2 flex-row">
+          <div class="contact-wrapper">
+            <h2>ADDRESS</h2>
+            <p>
+              4733 Chabot Drive #100 <br>
+              Pleasanton, CA 94588
+            </p>
+            <br>
+            <p>Julie Hansen-Orvis | CA DRE# 00934447</p>
+          </div>
+          <div class="contact-wrapper">
+            <h2>CONTACT INFORMATION</h2>
+            <a href="tel:(925) 553-6707">(925) 553-6707</a><br>
+            <a href="mailto:luxuryhomesinwc@icloud.com">luxuryhomesinwc@icloud.com</a>
+          </div>  
+        </div>
+        <br><br>
+      </div>
+      <div class="footer-1-2 footer-content">
+        <h1>Newsletter</h1>
+        <p>Subscribe to our Newsletter for latest news and updates.</p>
+        <p>Stay tuned!</p>
+        <form class="newsletter-form" action="">
+          <input type="email" id="email-input" placeholder="Email Address">
+          <br>
+          <input type="submit" id="newsletter-submit" value="SUBSCRIBE">
+        </form>
+      </div>
+    </div>
+    <br><br>
+    <div class="footer-2">
+      <div class="footer-2-1 footer-content flex-row align-center">
+        <a href="https://web.facebook.com/juliehansenpartership?_rdc=1&_rdr">
+          <img src="img/facebook.svg" alt="facebook-logo" id="facebook-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/julie-hansen-orvis-10b99359/">
+          <img src="img/linkedin.svg" alt="linkedin-logo" id="linkedin-logo">
+        </a>
+      </div>
+      <div class="footer-2-2 footer-content flex-row align-center">
         <img
-          src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.svg"
-          alt="jhsereno-logo"
-        />
+          src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zbesma34ygwklawiysod/dark-realtor-logo_x1vczu"
+          alt="footer-img-1"
+          id="footer-img-1">
+        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/siun2nwoji9w7v0mssvy/dark-equal-logo_gahxpa"
+          alt="footer-img-2"
+          id="footer-img-2">
+        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qje0mcix0r0qeoiikumu/sereno-logo" 
+          alt="footer-img-3"
+          id="footer-img-3">
       </div>
-      <ul class="flex-row justify-center">
-        <li><a href="">MEET THE TEAM</a></li>
-        <li><a href="">SEARCH FOR HOMES</a></li>
-        <li><a href="">OUR COMMUNITIES</a></li>
-        <li><a href="">HOME VALUATION</a></li>
-        <li><a href="">SERVICES</a></li>
-        <li><a href="">HOME ACROSS AMERICA</a></li>
-        <li><a href="">TESTIMONIALS</a></li>
-        <li><a href="">CONTACT US</a></li>
-      </ul>
-    </nav>
-    <section class="services-intro-section flex-column align-center" id="service-intro-section">
-      <div class="intro1-message-wrapper" >
-        <p class="hidden" id="intro1-message">Over 33 Years of<br />Real Estate Success</p>
-      </div>
-      <div class="intro2-message-wrapper">
-        <p class="hidden" id="intro2-message">
-          We offer unparalleled service and negotiation skills to meet your
-          needs.
+    </div>
+    <br><br>
+    <div class="footer-3">
+      <div class="footer-3-1 footer-content">
+        <p>
+          Website Designed & Developed by
+          <a href="https://www.luxurypresence.com/"> Luxury Presence</a>
         </p>
       </div>
-      <div
-        class="scroll-down-wrapper flex-column align-center"
-        onclick="smoothScroll()"
-      >
-        <div class="scroll-down"></div>
+      <div class="footer-3-2 footer-content">
+        <p>Copyright 2024 | Privacy Policy</p>
       </div>
-    </section>
-    <section
-      class="services-section flex-column justify-center align-center"
-      id="services-section"
-    >
-      <h1>What You Can Expect</h1>
-      <div class="services-container flex-row justify-center">
-        <div class="services-card flex-column align-center hidden">
-          <img
-            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
-            alt="Wide Syndication"
-          />
-          <h2>Wide Syndication</h2>
-          <p>Market your property locally, nationally, and internationally.</p>
-        </div>
-        <div class="services-card flex-column align-center hidden">
-          <img
-            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007"
-            alt="Responsive Support"
-          />
-          <h2>Responsive Support</h2>
-          <p>Always available via phone, text, or email.</p>
-        </div>
-        <div class="services-card flex-column align-center hidden">
-          <img
-            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009"
-            alt="High-Quality Virtual Tours"
-          />
-          <h2>High-Quality Virtual Tours</h2>
-          <p>Make your home stand out with immersive virtual tours.</p>
-        </div>
-        <div class="services-card flex-column align-center hidden">
-          <img
-            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dywgmsgzddtcsqxagbwh/image-013"
-            alt="Professional Photography"
-          />
-          <h2>Professional Photography</h2>
-          <p>High-end photography for effective property marketing.</p>
-        </div>
-        <div class="services-card flex-column align-center hidden">
-          <img
-            src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081"
-            alt="Drone Photography"
-          />
-          <h2>Drone Photography</h2>
-          <p>
-            Highlight unique perspectives of your property with aerial views.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="test">
-      <div class="services-img-wrapper flex-row justify-center">
-        <img
-					id="testinglangs"
-          src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/hqguvxyyi5jciyrzy35v/page-3"
-          alt="Services"
-        />
-      </div>
-    </section>
-  </body>
-  <footer></footer>
+    </div>
+  </footer>
+</body>
+
 </html>
 <script type="text/javascript" src="./js/script.js"></script>
