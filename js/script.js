@@ -40,7 +40,7 @@ const introMessageObserver = new IntersectionObserver(
     }
   },
   {
-    threshold: 1,
+    threshold: 0.5,
   }
 );
 
