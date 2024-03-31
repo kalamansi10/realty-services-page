@@ -130,24 +130,14 @@
       color: white;
       text-align: center;
     }
-  }  
+  }
 
   .intro2-message-wrapper {
     p {
       padding-left: 15%;
       padding-right: 15%;
     }
-}
-}
-
-#search-input {
-  background: none;
-  height: 30px;
-  width: 100%;
-  border: none;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.527);
-  border-radius: 20px;
+  }
 }
 
 .scroll-down-wrapper {
@@ -183,8 +173,6 @@
 }
 
 .services-container {
-  display: flex;
-  justify-content: center;
   border-radius: 10px;
   background-color: white;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
@@ -199,6 +187,7 @@
 
 .services-card {
   gap: 5px;
+
   img {
     width: 90px;
     aspect-ratio: 1 /1;
@@ -217,74 +206,23 @@
 }
 
 @media (max-width: 700px) {
-  .services-section h1 {
-    font-size: 60px;
+  .services-section {
+    background-color: white;
+
+    h1 {
+      font-size: 50px;
+    }
   }
-}
 
-/* Process */
-
-.processes-section {
-  background-color: white;
-  color: white;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  min-height: 1200px;
-  h1 {
-    font-size: 40px;
-    padding: 20px;
+  .services-container {
+    border-radius: none;
+    box-shadow: none;
   }
-}
 
-.processes-conatainer {
-  margin: 20px;
-  padding: 50px 50px 0 50px;
-  height: 700px;
-  width: 700px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-.selling-process {
-  align-self: start;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027");
-}
-
-.buying-process {
-  align-self: end;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/nhcjbdzbycjvfcks0nqe/image-004");
-}
-
-.list-left,
-.list-right {
-  opacity: 0;
-  display: flex;
-  align-items: start;
-  width: 500px;
-  p {
-    padding-top: 13px;
-    font-family: var(--global-secondary-font-family-short);
+  .services-card {
+    padding-bottom: 70px;
   }
-}
-
-.list-num {
-  display: inline-block;
-  transform: rotate(-90deg);
-  padding: 10px;
-  font-size: 50px;
-  font-family: var(--global-primary-font-family);
-  opacity: 50%;
+  
 }
 
 /* Articles */
@@ -308,11 +246,28 @@
   width: 500px;
   text-align: center;
   gap: 30px;
+
   h2 {
     font-size: 90px;
   }
   p {
     font-family: var(--global-secondary-font-family);
+  }
+}
+
+@media (max-width: 700px) {
+  .article-content-1 {
+    color: white;
+    width: 90vw;
+    text-align: center;
+    gap: 30px;
+
+    h2 {
+      font-size: 50px;
+    }
+    p {
+      font-family: var(--global-secondary-font-family);
+    }
   }
 }
 
@@ -338,21 +293,20 @@
   img {
     opacity: 0;
     height: auto;
-    width: 700px;
+    width: 500px;
     border-radius: 3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .article-container-2,
   .article-container-3,
   .article-container-4 {
     img {
-      opacity: 0;
       height: auto;
-      width: 90%;
+      width: 90vw;
     }
   }
 }
@@ -402,6 +356,110 @@
   }
 }
 
+@media (max-width: 700px) {
+  .article-content-2,
+  .article-content-3,
+  .article-content-4,
+  .article-content-4-1,
+  .article-content-4-2 {
+    h2 {
+      width: 90vw;
+      padding-bottom: 25px;
+    }
+  }
+
+  .text-container-2,
+  .text-container-3,
+  .text-container-4,
+  .text-container-4-1,
+  .text-container-4-2 {
+    width: 90vw;
+    padding: 0;
+  }
+
+}
+
+/* Process */
+
+.processes-section {
+  background-color: white;
+  color: white;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  min-height: 1200px;
+  gap: 20px;
+
+  h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+
+.processes-conatainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 700px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  ol {
+    width: 500px;
+  }
+}
+
+.selling-process {
+  align-self: start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027");
+}
+
+.buying-process {
+  align-self: end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/nhcjbdzbycjvfcks0nqe/image-004");
+}
+
+.list-left,
+.list-right {
+  opacity: 0;
+  display: flex;
+  p {
+    padding-top: 13px;
+    font-family: var(--global-secondary-font-family-short);
+  }
+}
+
+.list-num {
+  transform: rotate(-90deg);
+  padding: 10px;
+  font-size: 50px;
+  font-family: var(--global-primary-font-family);
+  opacity: 50%;
+}
+
+@media (max-width: 500px) {
+  .processes-section {
+    padding: 0;
+    gap: 1px;
+  }
+  .processes-conatainer {
+    border-radius: 0;
+    box-shadow: none;
+
+    ol {
+      width: 90vw;
+    }
+  }
+}
+
+/* Outro */
+
 .outro-article-section {
   padding-bottom: 200px;
   h2 {
@@ -426,20 +484,8 @@
 .text-container-5 {
   text-align: center;
   p {
-    max-width: 1500px;
-    font-family: var(--global-secondary-font-family);
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  .text-container-5 p {
     max-width: 1000px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .text-container-5 p {
-    max-width: 500px;
+    font-family: var(--global-secondary-font-family);
   }
 }
 
@@ -490,6 +536,29 @@
 #partners-4 {
   height: 50px;
   width: auto;
+}
+
+#partners-img {
+  width: 500px;
+  margin: 50px;
+}
+
+
+
+@media (max-width: 999px) {
+  .text-container-5 p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .text-container-5 p,
+  #partners-img,
+  .text-container-6,
+  .partners-wrapper img,
+  .partners-wrapper {
+    width: 90vw;
+  }  
 }
 
 /* Contact Section */
@@ -565,6 +634,12 @@ footer {
     font-size: 37px;
     padding-bottom: 20px;
   }
+}
+
+@media (max-width: 550px) {
+  .footer-content {
+    width: 90vw;
+  }  
 }
 
 .footer-1-1-1 p,

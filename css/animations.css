@@ -78,6 +78,24 @@
   }
 }
 
+@media (max-width: 700px) {
+
+  .zoom-in {
+    opacity: 0%;
+    animation: zoom-in 0s forwards;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+}
+
 
 .line-animation {
   width: 0;
