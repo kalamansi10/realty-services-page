@@ -22,6 +22,26 @@
   --iterations: 1;
 }
 
+/* Media Query Breakpoints */
+
+Media Query Breakpoints
+
+:root {
+  --phone-sm: 420px,
+  --phone: 767px,
+  --tablet: 768px,
+  --tablet-lg: 1024px,
+  --desktop: 1025px,
+  --desktop-lg: 1600px
+}
+
+/* Defaults */
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--global-primary-font-family-short);
+  font-weight: 400;
+}
+
 /* Layout and Flexbox */
 .flex-column {
   display: flex;
