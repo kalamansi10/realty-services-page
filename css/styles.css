@@ -442,7 +442,7 @@
   opacity: 50%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .processes-section {
     padding: 0;
     gap: 1px;
