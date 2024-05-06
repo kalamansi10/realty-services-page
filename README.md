@@ -1,1 +1,1 @@
-Mock page for Luxury presence Web Builder application.
+This a static mock web page made for Luxury Presence Web Builder application.
